@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserService {
 
     @Autowired
-    UserDao userDao;
+    private UserDao userDao;
 
     public User getById(int id) {
         return userDao.getById(id);

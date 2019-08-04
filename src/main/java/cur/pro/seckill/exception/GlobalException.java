@@ -1,20 +1,16 @@
 package cur.pro.seckill.exception;
 
-import com.czmec.miaosha.result.CodeMsg;
 
+import cur.pro.seckill.result.CodeMsg;
+import lombok.Getter;
+
+@Getter
 public class GlobalException extends RuntimeException{
 
-	private static final long serialVersionUID = 1L;
-	
-	private CodeMsg cm;
-	
-	public GlobalException(CodeMsg cm) {
-		super(cm.toString());
-		this.cm = cm;
-	}
+	private final transient CodeMsg codeMsg;
 
-	public CodeMsg getCm() {
-		return cm;
+	public GlobalException(CodeMsg codeMsg) {
+		super(codeMsg.toString());
+		this.codeMsg = codeMsg;
 	}
-
 }

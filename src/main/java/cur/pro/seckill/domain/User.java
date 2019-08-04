@@ -1,22 +1,17 @@
 package cur.pro.seckill.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * @author augenye
- * @date 2019-08-03 10:40
+ * @date 2019-08-04 20:21
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private int id;
     private String name;
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
 }
