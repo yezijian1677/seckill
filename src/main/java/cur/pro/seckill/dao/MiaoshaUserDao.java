@@ -5,12 +5,13 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Component;
 
 /**
  * @author augenye
  * @date 2019-08-04 20:39
  */
-@Mapper
+@Component
 public interface MiaoshaUserDao {
 
     @Select("select * from miaosha_user where id = #{id}")
