@@ -1,7 +1,8 @@
 package cur.pro.seckill.redis;
 
-public class AccessKey extends BasePrefix{
-    private AccessKey( int expireSeconds, String prefix) {
+public class AccessKey extends BasePrefix {
+
+    private AccessKey(int expireSeconds, String prefix) {
         super(expireSeconds, prefix);
     }
 

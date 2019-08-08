@@ -1,6 +1,8 @@
 package cur.pro.seckill.config;
 
+import cur.pro.seckill.access.UserContext;
 import cur.pro.seckill.domain.MiaoshaUser;
+import cur.pro.seckill.service.MiaoshaUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -8,11 +10,6 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-/**
- * @author augenye
- * @date 2019-08-04 20:08
- * 自定义参数解析器
- */
 public class UserArgumentResolver implements HandlerMethodArgumentResolver {
 
     @Autowired

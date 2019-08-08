@@ -8,15 +8,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @author augenye
- * @date 2019-08-04 20:55
- */
 @Service
 public class GoodsService {
 
     @Autowired
-    private GoodsDao goodsDao;
+    GoodsDao goodsDao;
 
     public List<GoodsVo> listGoodsVo() {
         return goodsDao.listGoodsVo();
@@ -41,5 +37,6 @@ public class GoodsService {
             goodsDao.resetStock(g);
         }
     }
+
 
 }

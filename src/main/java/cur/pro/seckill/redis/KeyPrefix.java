@@ -1,9 +1,9 @@
 package cur.pro.seckill.redis;
 
 public interface KeyPrefix {
-		
-	public int expireSeconds();
-	
-	public String getPrefix();
-	
+
+    int expireSeconds();
+
+    String getPrefix();
+
 }
